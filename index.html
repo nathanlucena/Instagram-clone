@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="body">  
+    <div class="centerContainer">
+        <div class="cellphone" >
+                <div class="slider">
+                    <img class="selected" src="./imgs/print1.jpg" alt="Image1">
+                    <img src="./imgs/print2.jpg" alt="Image2">
+                    <img src="./imgs/print3.jpg" alt="Image3">
+                    <img src="./imgs/print4.jpg" alt="Image4">
+                    <img src="./imgs/print5.jpg" alt="Image5">
+                </div>
+                <script>
+                    let time = 4000,
+                    currentImageIndex = 0,
+                    images = document
+                                .querySelectorAll(".slider img")
+                    max = images.length;
+                
+                    function nextImage() {
+                    
+                        images[currentImageIndex]
+                            .classList.remove("selected")
+                    
+                        currentImageIndex++
+                    
+                        if(currentImageIndex >= max)
+                            currentImageIndex = 0
+                    
+                        images[currentImageIndex]
+                            .classList.add("selected")
+                    }
+                
+                    function start() {
+                        setInterval(() => {
+                            // troca de image
+                            nextImage()
+                        }, time)
+                    }
+                
+                     window.addEventListener("load", start)
+                      </script>
+       
+        </div>
+        <div class="loginCotainer">
+            <div class="login">
+                <div class="title">
+                    <p>Instagram</p>
+                </div>
+
+                <div class="formContainer">
+                    <div class="form">
+                        <input class="textInput" type="text" placeholder="Phone number, username or email" />
+                        <input class="textInput" type="password" placeholder="Password" />
+                        <button class="submitBnt" type="submit" value="Log In"> Log In </button>
+                    </div class="form"> 
+                </div>
+                <div class="orContainer">
+                    <span class="orLine"></span>
+                    <span class="orText">OR</span>
+                    <span class="orLine"></span>
+                </div>
+                <div class="facebook">
+                   
+                    <a href="#">
+                        <span class="fa fa-facebook-square"></span>
+                        Log in witch Facebook
+                    </a>
+                </div>
+                <div  class="forgetPssw">
+                    <a>Forgot password?</a>
+                </div>
+            </div>
+          
+          
+            <div class="singUp">
+                <div class="singUpText">
+                    <p>Don't have an account?</p>
+                    <a href="#">Sing Up</a>
+                </div>
+               
+            </div>
+            <div class="app">
+                <div class="appText">
+                    Get the app.
+                </div>
+                <div class="appLink">
+                    <a href="#"><img src="./imgs/appStore.png" /></a>
+                   <a href="#"><img src="./imgs/playStore.png" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerLinks">
+            <a href="#"> About </a>
+            <a href="#"> Blog </a>
+            <a href="#"> Jobs </a>
+            <a href="#"> Help </a>
+            <a href="#"> API </a>
+            <a href="#"> Privacy </a>
+            <a href="#"> Terms </a>
+            <a href="#"> Top Accounts </a>
+            <a href="#"> Hashtags </a>
+            <a href="#"> Locations </a>
+        </div>
+        <div class="footerLinks">
+            <a href="#"> Beauty </a> 
+            <a href="#"> Dance & Performance </a>
+            <a href="#"> Fitness </a>
+            <a href="#"> Food & Drink </a>
+            <a href="#"> Home & Garden </a>
+            <a href="#"> Music </a>
+            <a href="#"> Visual Arts </a>
+        </div>
+        <div class="footerLinks">
+           <a href="#"> English </a>
+           <a href="https://github.com/nathanlucena"> © 2021 github.com/nathanlucena </a> 
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+</html>

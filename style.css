@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+  
+.body{
+    background-color:#fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centerContainer{
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    max-height: 85vh;
+}
+
+
+.cellphone{
+    background-image: url(./imgs/iphone6bg.jpg);
+    background-size: 400px;
+    background-repeat: no-repeat;
+    width: 420px;
+    height: 680px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .cellphone{    
+    display: none;
+ }
+}
+ 
+
+.slider{ 
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.slider img{
+    opacity: 0;
+    object-fit: cover;
+    position: absolute;
+    transition: opacity 2000ms;
+    min-height: 500px;
+}
+
+.slider img.selected { 
+    opacity: 1;
+}
+
+.selected{
+    width: 280px;
+    height: 500px;
+    border: #000 solid 3px;
+    margin-right: 3px;
+}
+
+.loginCotainer{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.login{
+    width: 350px;
+    height: 380px;
+    background-color: #fff;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #bdbdbd;
+}
+
+.title{
+    font-family: 'Grand Hotel';
+    font-size:55px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.form{
+    height: 120px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.textInput{
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #dbdbdb;
+    background-color:#fafafa;
+    text-indent: 10px;
+}
+
+.submitBnt{
+    height: 30px;
+    background-color: #0095F6;
+    color:#fff;
+    margin-top: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+}
+
+.orContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+}
+
+.orLine{
+    height: 1px;
+    width: 31%;
+    background-color: #dbdbdb;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.orText{
+    color: #8e8e8e;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.facebook{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:stretch;
+}
+
+.facebook a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #3b5998;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: auto;
+}
+
+.forgetPssw{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:stretch;
+}
+
+.forgetPssw a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #3b5998;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: auto;
+}
+
+.singUp{
+    width: 350px;
+    height: 70px;
+    background-color: #fff;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #bdbdbd;
+}
+
+.singUpText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    font-size: 14px;
+
+}
+
+.singUpText a{
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+    color: #0095F6;    
+}
+
+
+.app{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.appLink img{
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+.footer{
+    background-color: #fafafa;
+    height: 15vh;
+    max-height: 15vh;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ 
+}
+
+.footerLinks{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+    font-family: Helvetica;
+    padding-bottom: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #919191;
+}
